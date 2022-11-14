@@ -8,6 +8,10 @@
  * Text Domain: autoredirectbuddyboss
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 function redirect_to_profile( $redirect_to_calculated, $redirect_url_specified, $user ) { 
  if ( ! $user || is_wp_error( $user ) ) { 
  return $redirect_to_calculated; 
